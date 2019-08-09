@@ -9,9 +9,9 @@ reseter () {
 }
 
 reseter
-cd packages/example
+cd example
 reseter
-cd ../gatsby-plugin-optional-chaining
+cd ../package/gatsby-plugin-optional-chaining
 reseter
 cd ../../
 exit

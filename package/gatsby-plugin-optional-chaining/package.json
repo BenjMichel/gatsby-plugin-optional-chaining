@@ -4,12 +4,13 @@
   "description": "Optional chaining support for Gatsby's Babel config",
   "author": "Jamey Gleason <james.p.gleason@gmail.com>",
   "license": "MIT",
+  "main": "gatsby-node.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/jameygleason/gatsby-plugin-optional-chaining"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/jameygleason/gatsby-plugin-optional-chaining/issues"
   },
   "keywords": [
     "gatsby",

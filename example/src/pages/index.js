@@ -1,23 +1,25 @@
-import React from "react"
-import { Link } from "gatsby"
-import Layout from "../components/layout"
+import React from 'react'
 
 const animals = {
-  dog: {
-    name: "Nori"
-  },
+  // dog: {
+  //   name: 'Nori',
+  // },
   cat: {
-    name: "Fluffykins"
-  }
+    name: 'Fluffykins',
+  },
 }
 
 const IndexPage = () => {
-  console.log(animals?.dog?.name || `You got yourself a cat there bud-o. Name is ${animals?.cat?.name}`.)
+  console.log(
+    animals?.dog?.name ||
+      `You got yourself a cat there bud-o. Who's name is ${animals?.cat?.name}.`
+  )
 
   return (
-  <>
-    <h1>hey</h1>
-  </>
-)}
+    <>
+      <h1>hey</h1>
+    </>
+  )
+}
 
 export default IndexPage

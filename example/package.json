@@ -1,0 +1,10 @@
+{
+  "name": "example",
+  "version": "0.0.0",
+  "dependencies": {
+    "gatsby": "^2.13.54",
+    "gatsby-plugin-optional-chaining": "*",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}

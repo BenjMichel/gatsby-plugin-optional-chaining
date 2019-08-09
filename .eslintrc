@@ -1,0 +1,146 @@
+{
+	"extends": [
+		"airbnb",
+		"prettier",
+		"prettier/react"
+	],
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 8,
+		"ecmaFeatures": {
+			"experimentalObjectRestSpread": true,
+			"experimentalDecorators": true,
+			"jsx": true,
+			"impliedStrict": true,
+			"classes": true
+		}
+	},
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"plugins": [
+		"prettier",
+		"json"
+	],
+	"globals": {
+		"children": true,
+		"jest": true,
+		"test": true,
+		"expect": true
+	},
+	"settings": {
+		"import/core-modules": [
+			"react"
+		],
+		"import/no-unresolved": 2,
+		"import/resolver": {
+			"node": {
+				"moduleDirectory": ["node_modules", "/"],
+			},
+			"babel-module": {
+				"root": ["./src/"],
+				"alias": {
+					"app": "./app/providers",
+				},
+			}
+		}
+	},
+	"rules": {
+		"camelcase": ["error",
+			{
+				"properties": "never",
+				"allow": [
+					"Layout_main",
+					"Layout_blog",
+					"Layout_post"
+				]
+			}
+		],
+		"import/no-extraneous-dependencies": 0,
+		"import/prefer-default-export": 0,
+		"jsx-a11y/anchor-is-valid": ["warn", {
+			"aspects": [
+				"invalidHref"
+			]
+		}],
+		"jsx-a11y/label-has-for": 0,
+		"linebreak-style": ["error", "unix"],
+		"no-bitwise": ["error", {
+			"allow": ["~"]
+		}],
+		"no-console": "off",
+		"no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
+		],
+		"no-shadow": [2, {
+			"hoist": "all",
+			"allow": [
+				"resolve",
+				"reject",
+				"done",
+				"next",
+				"err",
+				"error"
+			]
+		}],
+		"no-unused-expressions": 0,
+		"no-unused-vars": [
+			1,
+			{
+				"argsIgnorePattern": "res|next|^err"
+			}
+		],
+		"no-underscore-dangle": [2, {
+			"allow": [
+				"_id",
+				"__typename"
+			]
+		}],
+		"no-use-before-define": ["error", {
+			"classes": true,
+			"functions": false,
+			"variables": true 
+		}],
+		"react/destructuring-assignment": 0,
+		"react/forbid-prop-types": 0,
+		"react/jsx-pascal-case": [0, {
+			"ignore": [
+				"Layout_main",
+				"Layout_blog",
+				"Layout_post"
+			]}
+		],
+		"react/jsx-filename-extension": [1, {
+			"extensions": [".js", ".jsx"]
+		}],
+		"react/no-array-index-key": 0,
+		"react/no-danger": 0,
+		"react/no-unescaped-entities": 0,
+		"react/prefer-stateless-function": 0,
+		"react/prop-types": [0, {
+			"ignore": [
+				"location",
+				"children"
+			]
+		}],
+		"radix": ["error", "as-needed"],
+		"semi": ["error", "never"],
+		"quotes": [2, "single", {
+			"avoidEscape": true,
+			"allowTemplateLiterals": true
+		}],
+		"prettier/prettier": ["error", {
+			"trailingComma": "es5",
+			"semi": false,
+			"singleQuote": true,
+			"bracketSpacing": true,
+			"printWidth": 90,
+			"tabWidth": 2,
+			"useTabs": false
+		}],
+	}
+}

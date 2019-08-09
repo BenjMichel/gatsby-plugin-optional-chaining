@@ -1,0 +1,28 @@
+{
+  "name": "gatsby-plugin-optional-chaining",
+  "version": "0.1.0",
+  "description": "Optional chaining support for Gatsby's Babel config",
+  "author": "Jamey Gleason <james.p.gleason@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-plugin-optional-chaining",
+    "babel/plugin-proposal-optional-chaining",
+    "babel"
+  ],
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "peerDependencies": {
+    "gatsby": ">=2"
+  }
+}
